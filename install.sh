@@ -60,7 +60,7 @@ if [ ! -f htdocs/app/etc/local.xml ] ; then
 fi
 
 if [ ! -f composer.lock ] ; then
-    tools/composer.phar install
+    tools/composer.phar install -vvv
 fi
 
 tools/modman deploy-all --force
